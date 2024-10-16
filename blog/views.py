@@ -8,4 +8,5 @@ def blog_view(request):
 
 
 def blog_single(request):
-    return render(request, 'blog/blog-single.html')
+    context = {'title': 'BTC crash', 'content': 'BTC riiid'}
+    return render(request, 'blog/blog-single.html', context)
